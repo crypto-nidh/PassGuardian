@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PassGuardian</title>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+     <div class="container">
+      <h2>Password Strength Analyzer</h2>
+    
+    <div id="glowWrapper" class="glow-wrapper strength-0">
+      <input type="password" id="password" placeholder="Enter password" />
+    </div>
+    <label style="display: block; margin-top: 10px;">
+      <input type="checkbox" id="togglePassword" /> Show Password
+    </label>
+    
+    <div class="strength-bar">
+    <div id="strength-fill"></div>
+    </div>
+    <p id="strength-text"></p>
+    <ul id="requirements">
+      <li id="length"><span class="icon">✗</span> At least 12 characters</li>
+      <li id="uppercase"><span class="icon">✗</span> Contains uppercase letter</li>
+      <li id="lowercase"><span class="icon">✗</span> Contains lowercase letter</li>
+      <li id="number"><span class="icon">✗</span> Contains a number</li>
+      <li id="symbol"><span class="icon">✗</span> Contains a special character</li>
+    </ul>
+    </div>
+    
+
+  <script src="script.js"></script>
+
+</body>
+</html>

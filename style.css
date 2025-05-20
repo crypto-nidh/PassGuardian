@@ -1,0 +1,98 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 300px;
+}
+
+.glow-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-wrapper input {
+  border: none;
+  background: #2c2c2c;
+  color: white;
+  width: 100%;
+  padding: 10px 1px;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Glowing strength levels */
+.strength-0 {
+  box-shadow: 0 0 10px 2px #ff4d4d;
+}
+.strength-1 {
+  box-shadow: 0 0 10px 2px #ff8000;
+}
+.strength-2 {
+  box-shadow: 0 0 10px 2px #ffd11a;
+}
+.strength-3 {
+  box-shadow: 0 0 10px 2px #99e600;
+}
+.strength-4 {
+  box-shadow: 0 0 10px 2px #00e676;
+}
+.strength-5 {
+  box-shadow: 0 0 10px 2px #04e817;
+}
+.strength-bar {
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+#strength-fill {
+  height: 100%;
+  width: 0%;
+  background: red;
+  transition: width 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#strength-text {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+ul#requirements {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+ul#requirements li {
+  font-size: 13px;
+  color: #ff4d4d;
+  margin-bottom: 5px;
+}
+
+ul#requirements li.valid {
+  color: lightgreen;
+}
+
+ul#requirements li .icon {
+  margin-right: 5px;
+  font-weight: bold;
+}
